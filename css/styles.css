@@ -73,6 +73,7 @@ img {
 }
 
 /*header*/
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -138,7 +139,6 @@ img {
   border-radius: 2px;
   background-color: var(--accent-text-color);
 }
-
 .cont-nav {
   display: flex;
   margin-left: auto;
@@ -174,6 +174,7 @@ img {
 }
 
 /*hero*/
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -229,6 +230,7 @@ img {
 }
 
 /* backdrop*/
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -463,6 +465,7 @@ form .button:focus {
 }
 
 /*work*/
+
 .section-work {
   padding-bottom: 94px;
   z-index: -1;
@@ -508,6 +511,7 @@ form .button:focus {
 
 
 /*team*/
+
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -813,6 +817,7 @@ address {
   display: flex;
   align-items: center;
 
+  height: 50px;
   padding: 10px 28px;
 }
 .form-foot .button:hover,
