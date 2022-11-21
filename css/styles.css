@@ -577,7 +577,7 @@ form .button:focus {
   justify-content: center;
   gap: 30px;
 }
-.clients-link .link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -588,17 +588,17 @@ form .button:focus {
   border-radius: 4px;
   transition: fill var(--animation), border var(--animation);
 }
-.icon-client {
-  fill: var(--icons-color);
-  transition: fill var(--animation);
-}
-.clients-link .link:hover,
-.clients-link .link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
-.clients-link .link:hover .icon-client,
-.clients-link .link:focus .icon-client {
+.clients__logo {
+  fill: var(--icons-color);
+  transition: fill var(--animation);
+}
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
   fill: var(--accent-text-color);
 }
 
