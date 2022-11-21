@@ -713,6 +713,8 @@ form .button:focus {
 
   background-color: var(--background-color);
 }
+
+/*step 1*/
 .footer-contacts {
   display: flex;
   align-items: baseline;
@@ -764,32 +766,25 @@ address {
   margin-right: auto;
 }
 
+/*step 2*/
 .social-links {
   margin-right: 93px;
 }
-.social-links .features-title {
+.social-links__subtile--white {
   margin-bottom: 20px;
 
   color: var(--white-text-color);
 }
-/*.social-list {
-  display: flex;
-  justify-content: start;
-  gap: 10px;
-}
-.social-list .icon-dev {
-  fill: var(--white-text-color);
-}*/
 
+/*step 3*/
+.sing-up__subtile--white {
+  margin-bottom: 20px;
+
+  color: var(--white-text-color);
+}
 .form-foot {
   display: flex;
   justify-content: start;
-}
-
-.sing-up .features-title {
-  margin-bottom: 20px;
-
-  color: var(--white-text-color);
 }
 .form-foot input {
   margin-right: 12px;
