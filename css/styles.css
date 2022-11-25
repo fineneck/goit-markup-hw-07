@@ -767,15 +767,12 @@ address {
   letter-spacing: 0.03em;
   transition: color var(--animation);
 }
-
 .f-address__link:hover,
 .f-address__link:focus,
 .f-address__contact:hover,
 .f-address__contact:focus {
   color: var(--accent-text-color);
 }
-
-
 
 /*social links*/
 .social-links {

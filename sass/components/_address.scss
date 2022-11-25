@@ -12,12 +12,8 @@ address {
 
 .f-address__link {
     color: $white-text-color;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    transition: color $animation;
+
+    @extend %footer-address;
 
     &:hover,
     &:focus {
@@ -28,12 +24,8 @@ address {
 
 .f-address__contact {
     color: $contacts-color;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    transition: color $animation;
+
+    @extend %footer-address;
 
     &:hover,
     &:focus {

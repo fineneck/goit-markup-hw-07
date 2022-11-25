@@ -22,20 +22,15 @@
 
     &__title {
         margin-bottom: 10px;
-      
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
+
+        @extend %team;
     }
 
     &__text {
         margin-bottom: 16px;
       
         color: $primary-text-color;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
+        @extend %team;
     }
 }
 
