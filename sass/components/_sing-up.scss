@@ -6,34 +6,36 @@
 .form-foot {
     display: flex;
     justify-content: start;
+}
 
-    & input {
-        margin-right: 12px;
-        padding-left: 16px;
+.form-foot input {
+    margin-right: 12px;
+    padding-left: 16px;
       
-        width: 358px;
-        height: 50px;
+    width: 358px;
+    height: 50px;
       
-        color: $white-text-color;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 4px;
-        background-color: transparent;
-        transition: $animation;
+    color: $white-text-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: $animation;
 
-        & input:hover,
-        & input:focus {
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          border: 1px solid $accent-text-color;
-        }
+    & input:hover,
+    & input:focus {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+       border: 1px solid $accent-text-color;
     }
+  
 
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
     }
+}
 
-    & .button {
+.form-foot .button {
         display: flex;
         align-items: center;
       
