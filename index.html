@@ -5,48 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!--Normalize-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
+    <!--Custom styles-->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <!--Верхня лінія-->
+    <!--Header-->
     <header class="header">
       <div class="container flex-container">
         <nav class="nav flex-cont">
           <a href="./index.html" class="primary"
             >Web<span class="logo-white">Studio</span></a
           >
-
-          <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="link current">Студія</a>
+          <!--Navigation-->
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link current">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
-            <li class="item"><a href="#Контакти" class="link">Контакти</a></li>
+            <li class="navigation__item"><a href="#Контакти" class="navigation__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="cont-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
+
+        <!--Contacts-->
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
               ><svg class="icon-mail" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
               <svg class="icon-phone" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -56,8 +66,9 @@
         </ul>
       </div>
     </header>
+
     <main>
-      <!--Шапка-->
+      <!--Hero-->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
@@ -116,7 +127,7 @@
         </div>
       </section>
 
-      <!--Особливості-->
+      <!--Features-->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -172,7 +183,7 @@
         </div>
       </section>
 
-      <!--Чим ми займаємося-->
+      <!--Work block-->
       <section class="section-work">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
@@ -220,7 +231,7 @@
         </div>
       </section>
 
-      <!--Наша Команда-->
+      <!--Team-->
       <section class="section-team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -445,7 +456,7 @@
         </div>
       </section>
 
-      <!--Постійні клієнти-->
+      <!--Clients-->
       <section class="section-clients">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
@@ -496,40 +507,44 @@
         </div>
       </section>
     </main>
-    <!--Нижня лінія-->
+
+    <!--Footer-->
     <footer class="footer">
       <div class="container footer-contacts">
-        <!--step 1-->
+
+        <!--logo-->
         <div class="web-contacts">
           <a href="./index.html" class="primary"
             >Web<span class="logo-black">Studio</span></a
           >
 
+          <!--address-->
           <address>
-            <ul class="nav-foot">
-              <li class="item">
+            <ul class="f-address">
+              <li class="f-address__item">
                 <a
                   href="https://goo.gl/maps/nedKhjfCdMCEQV4k6"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="link"
+                  class="f-address__link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="cont-link"
+              <li class="f-address__item">
+                <a href="mailto:info@devstudio.com" class="f-address__contact"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="cont-link"
+              <li class="f-address__item">
+                <a href="tel:+380961111111" class="f-address__contact"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <!--step 2-->
+
+        <!--social links-->
         <div class="social-links">
           <h3 class="subtitle social-links__subtile--white">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="social-list">
@@ -575,7 +590,8 @@
             </li>
           </ul>
         </div>
-        <!--step 3-->
+
+        <!--sing up-->
         <div class="sing-up">
           <h3 class="subtitle sing-up__subtile--white">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
           <div class="form-foot">

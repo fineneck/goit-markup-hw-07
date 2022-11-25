@@ -99,14 +99,15 @@ img {
 .logo-white {
   color: var(--black-color);
 }
-.site-nav {
+
+.navigation {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -119,15 +120,15 @@ img {
   text-decoration: none;
   transition: color var(--animation);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-text-color);
 }
-.site-nav .link.current {
+.navigation__link.current {
   position: relative;
   color: var(--accent-text-color);
 }
-.site-nav .link.current::after {
+.navigation__link.current::after {
   content: "";
 
   display: block;
@@ -139,14 +140,15 @@ img {
   border-radius: 2px;
   background-color: var(--accent-text-color);
 }
-.cont-nav {
+
+.contacts {
   display: flex;
   margin-left: auto;
 }
-.cont-nav .item + .item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
-.cont-nav .link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -160,8 +162,8 @@ img {
   text-decoration: none;
   transition: color var(--animation);
 }
-.cont-nav .link:hover,
-.cont-nav .link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-text-color);
 }
 .icon-mail {
@@ -249,6 +251,7 @@ img {
   pointer-events: none;
   visibility: hidden;
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
@@ -283,7 +286,7 @@ img {
   cursor: pointer;
   border: 1px solid #0000001a;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white-text-color);
   transition: fill var(--animation), border var(--animation);
 }
 .modal-button:hover,
@@ -612,10 +615,10 @@ form .button:focus {
   justify-content: center;
   margin-bottom: 50px;
 }
-.button-list .item + .item {
+.button-list__item + .button-list__item {
   margin-left: 8px;
 }
-.button-list .buttons {
+.button-list__buttons {
   padding: 6px 22px;
 
   text-align: center;
@@ -631,8 +634,8 @@ form .button:focus {
   transition: background-color var(--animation), color var(--animation),
     box-shadow var(--animation);
 }
-.button-list .buttons:hover,
-.button-list .buttons:focus {
+.button-list__buttons:hover,
+.button-list__buttons:focus {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -640,12 +643,12 @@ form .button:focus {
 }
 
 /*production*/
-.prod-list {
+.product-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.prod-item .link {
+.product-list__link {
   display: block;
 
   color: inherit;
@@ -653,16 +656,16 @@ form .button:focus {
 
   transition: box-shadow var(--animation);
 }
-.prod-item .link:hover,
-.prod-item .link:focus {
+.product-list__link:hover,
+.product-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.prod-thumb {
+.product-thumb {
   position: relative;
   overflow: hidden;
 }
-.prod-thumb .descript {
+.product-thumb__descript {
   position: absolute;
 
   display: flex;
@@ -676,27 +679,27 @@ form .button:focus {
   transition: opacity var(--animation), transform var(--animation);
   background-color: rgba(33, 150, 243, 0.9);
 }
-.prod-item .descript-text {
+.product-thumb__text {
   text-align: left;
 
   font-size: 18px;
   line-height: 1.6;
   color: var(--white-text-color);
 }
-.prod-item .link:hover .descript,
-.prod-item .link:focus .descript {
+.product-list__link:hover .product-thumb__descript,
+.product-list__link:focus .product-thumb__descript {
   opacity: 1;
   transform: translateY(-100%);
 }
-.prod-box {
+
+.product-box {
   padding: 20px 24px;
 
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-
-.prod-title {
+.product-box__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -704,7 +707,7 @@ form .button:focus {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.prod-text {
+.product-box__text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -718,7 +721,7 @@ form .button:focus {
   background-color: var(--background-color);
 }
 
-/*step 1*/
+/*logo*/
 .footer-contacts {
   display: flex;
   align-items: baseline;
@@ -734,13 +737,19 @@ form .button:focus {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.nav-foot .item:not(:last-child) {
+
+/*address*/
+.f-address {
+  margin-right: auto;
+}
+
+.f-address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 address {
   margin-top: 20px;
 }
-.nav-foot .link {
+.f-address__link {
   color: var(--white-text-color);
   text-decoration: none;
   font-style: normal;
@@ -749,7 +758,7 @@ address {
   letter-spacing: 0.03em;
   transition: color var(--animation);
 }
-.nav-foot .cont-link {
+.f-address__contact {
   color: var(--contacts-color);
   text-decoration: none;
   font-style: normal;
@@ -759,18 +768,16 @@ address {
   transition: color var(--animation);
 }
 
-.nav-foot .link:hover,
-.nav-foot .link:focus,
-.nav-foot .cont-link:hover,
-.nav-foot .cont-link:focus {
+.f-address__link:hover,
+.f-address__link:focus,
+.f-address__contact:hover,
+.f-address__contact:focus {
   color: var(--accent-text-color);
 }
 
-.nav-foot {
-  margin-right: auto;
-}
 
-/*step 2*/
+
+/*social links*/
 .social-links {
   margin-right: 93px;
 }
@@ -780,7 +787,7 @@ address {
   color: var(--white-text-color);
 }
 
-/*step 3*/
+/*sing up*/
 .sing-up__subtile--white {
   margin-bottom: 20px;
 

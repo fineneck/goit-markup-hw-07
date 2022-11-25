@@ -1,0 +1,48 @@
+address {
+    margin-top: 20px;
+}
+
+.f-address {
+    margin-right: auto;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        color: $white-text-color;
+        text-decoration: none;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color $animation;
+
+        &:hover,
+        &:focus {
+         color: $accent-text-color; 
+        }
+
+    }
+
+    &__contact {
+        color: $contacts-color;
+        text-decoration: none;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color $animation;
+
+        &:hover,
+        &:focus {
+         color: $accent-text-color;
+        }
+    }
+}
+  
+
+
+
+  
+

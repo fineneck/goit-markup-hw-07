@@ -1,0 +1,50 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  
+    width: 528px;
+    padding: 40px 39px 40px 41px;
+  
+    background-color: $white-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform $animation;
+}
+.modal-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+  
+    cursor: pointer;
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+    background-color: $white-text-color;
+    transition: fill $animation, border $animation;
+
+
+    &:hover,
+    &:focus {
+    fill: $accent-text-color;
+    border-color: $accent-text-color;
+  }
+}
+  
+.modal-form {
+    margin-bottom: 12px;
+  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $title-text-color;
+}

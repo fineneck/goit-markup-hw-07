@@ -1,0 +1,36 @@
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 91px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+  
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: fill $animation, border $animation;
+
+    &:hover,
+    &:focus {
+     fill: $accent-text-color;
+     border-color: $accent-text-color;
+   }
+}
+
+.clients__logo {
+    fill: $icons-color;
+    transition: fill $animation;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+     fill: $accent-text-color;
+  }
+}
